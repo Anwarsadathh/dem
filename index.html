@@ -139,20 +139,19 @@
 </style>
 
 
-
   <nav class="navbar">
-      <div class="logos okk"><img class="nextt  ok" src="images/mes blue.png" alt="Logo"></div>
+      <div class="logos okk"><img class="nextt  ok" src="../images/mes blue.png" alt="Logo"></div>
       <input type="checkbox" id="click">
       <label for="click" class="menu-btn">
         <i  class="fa fa-bars"></i>
       </label>
       <ul >
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-<li class="nav-item"><a class="nav-link " href="team.html">About Us</a></li>
-<li class="nav-item"><a class="nav-link" href="application-form.html">Register</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+<li class="nav-item"><a class="nav-link " href="/team">About Us</a></li>
+<li class="nav-item"><a class="nav-link" href="/Registration-form">Register</a></li>
 
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
       </ul>
     </nav>
 <section class="hero-wrap" style="background-image: url('images/coo.jpg');">
@@ -162,16 +161,62 @@
 <div class="col-lg-5">
 <div class="text " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
 <span class="subheading">MUST KNOW BEFORE CHOOSE</span>
-<h1 class=""> Are You Confused About Future?<br>
+<h1 id="typedtext"> Are You Confused About Future?<br>
   We Can Help You!</h1>
+ 
+  <script>
+
+    // set up text to print, each item in array is new line
+var aText = new Array(
+"Are You Confused About Future ?", 
+"We Can Help You!"
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setInterval("typewriter()", 500);
+  }
+ } else {
+  setInterval("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+  </script>
+  
+    
 <p class="mb-4 sub-thin-heading">Looking For Best University And Less Fees?</p>
-<p><a href="#" class="btn btn-primary p-4 py-3">We are here to help You <span class="ion-ios-arrow-round-forward"></span></a> <a href="#" class="btn btn-white p-4 py-3"  onclick="window.open('images/MES.pdf')">view course<span class="ion-ios-arrow-round-forward"></span></a></p>
+<p><a href="/contact" class="btn btn-primary p-4 py-3" >We are here to help You 
+    <span class="ion-ios-arrow-round-forward"></span></a>
+     <a href="#" class="btn btn-white p-4 py-3"  onclick="window.open('images/MES.pdf')">view course<span class="ion-ios-arrow-round-forward"></span></a></p>
 </div>
 </div>
 </div>
 </div>
 </section>
-
+<button id="open-modal" class="fa-solid fa-file"></button>
 <section class="ftco-section ftco-no-pt ftco-no-pb">
 <div class="container-xl">
 <div class="row g-xl-5">
@@ -202,7 +247,6 @@
 </div>
 </div>
 </div>
-
 <div class="col-lg-12 d-flex align-items-stretch services-wrap">
 <div class="services d-flex">
 <div class="icon"><span class="flaticon-scientist"></span></div>
@@ -218,27 +262,559 @@
 </div>
 </div>
 </div>
-
 </section>
-<button id="open-modal" class="fa-solid fa-file"></button>
-  <div class="container "style="padding-left: 5%; padding-right: 5%; text-align: justify;">
+
+  <div class="container" style="padding-left: 5%; padding-right: 5%; text-align: justify;">
   <div class="row">
   <div class="col-md-10 mt-4 heading-section" data-aos="fade-up">
   <h6>What is next.in</h6>
-  <h2 class="">INDIA</h2>
+   <h2 class="">IINDIA</h2>
   </div>
   </div>
-  <p class="mb-4 ml-5 mr-5"> Students looking to study in India have only handful of options available. We give students best options available. We also provide scholarship options on the basis of marks. Hence, we trying to solve one of the most complicated and critical thing in the world, our experts focused on bringing best outcome. </p>
-  <p class="mb-4 ml-5 mr-5">Student want to be confident that the post-secondary studies they choose is the best option for them. The recommender helps the student discover the best schools that they can get admitted. This unbiased platform helps students connect with universities and colleges that are the best fit for their grades and interests.</p>
+  <p class="mb-4 ml-5 mr-5" > Students looking to study in India have only handful of options available. We give students best options available. We also provide scholarship options on the basis of marks. Hence, we trying to solve one of the most complicated and critical thing in the world, our experts focused on bringing best outcome. </p>
+  <p class="mb-4 ml-5 mr-5" style="text-align: j
+  ; ">Student want to be confident that the post-secondary studies they choose is the best option for them. The recommender helps the student discover the best schools that they can get admitted. This unbiased platform helps students connect with universities and colleges that are the best fit for their grades and interests.</p>
 
   <div class="col-md-10  heading-section" data-aos="fade-up">
   <h2 class="">OUR GOALS</h2>
 </div>
 <p class="mb-5">Our goal is to help students by facilitate admissions in their dream universities and colleges along with that we facilitate accomodation and scholarships.<br>We aspire to become India's largest student portal and wants to reduce all the difficulties in university admission process. </p>
 </div> 
+<header><h1>
+  <span>Why</span>
+  <span>Choose</span>
+  <span>Us</span>
+  <span>?</span>
+  
+</h1></header>
+
+<style>
+  
+h1 {
+  font-family: "Montserrat Medium";
+  
+  
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+</style>
+<!--Brian Tracy-->
+
+  <section  class="features">
+    <div class="feature card">
+      <ul>
+      <i class="fa fa-university"></i>
+      <h2>ADMISSION GUIDANCE</h2>
+      <li><p>Our experts guide the students about various
+courses available according to their interests <br>
+</p></li>
+       <li><p> 
+   We guide the students and help them to choose
+the right college or university that follows best of
+the teaching practices, safe and secure</p></li> 
+    </div></ul>
+    <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>CAREER COUNSELLING</h2>
+      <li><p>We provide career counselling to our students by
+helping them to choose the right course that helps
+them to achieve their career goals</p></li>
+      
+<li><p>We also provide complete analytical information
+about trending and upcoming careers according to
+the industry</p></li>
+</ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>PERSONALITY TESTING</h2>
+      <li><p>We help the students to analyse their weaknesses
+and help them to overcome their Jaws</p></li>
+      
+<li><p>We train the students on various soft skills and
+interdisciplinary skills and assist in personality
+enhancement of students</p></li>
+</ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>SCHOLARSHIPS</h2>
+      <li><p>We give exclusive information about different
+types of scholarships available for both Karnataka
+and Non-Karnataka students</p></li>
+      
+
+</ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>CAREER OPTIONS
+</h2>
+      <li><p>We guide the students in choosing the right
+careers according to their interests</p></li>
+      
+<li><p>We guide the students about the high Return of
+Investment (ROI) jobs and highest salary packages</p></li>
+</ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>CAREER ADVANCEMENT TRAINING</h2>
+      <li><p>We provide tips for the students and working
+professionals with career advancement training</p></li>
+      
+<li><p>We give insights about the market trends and help
+them to upgrade their career graphs</p></li>
+</ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>INTERVIEW TRAINING</h2>
+      <li><p>Our students will be trained with exclusive
+interview skills to build conOdence in cracking any
+selection process</p></li>
+      
+<li><p>Our experts will train the students with all the
+interview etiquettes like dress code,
+behaviour,FAQs etc.
+</p></li>
+</ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>MOCK INTERVIEW</h2>
+      <li><p>Our experts from different professional
+backgrounds will prepare the students for
+interviews</p></li>
+      
+<li><p>We conduct mock interview sessions for the
+students and try to to give them real-time interview
+experience</p></li>
+</ul>
+    </div>
+       <div class="feature card"> <ul>
+      <i class="fas fa-users"></i>
+      <h2>COMPETITIVE EXAM TRAINING
+</h2>
+      <li><p>We provide our students with
+all the details of major competitive exams like
+syllabus, structure of exam, exam pattern, exam
+tips etc.</p></li>
+<li><p>Our students will be given expert guidance about
+the entrance exams from experts</p></li></ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>MERIT ASSISTANCE</h2>
+      <li><p>We guide them with in-depth details about the
+merit admission process and help our students to
+get admission to top colleges in Bangalore and
+Karnataka and kerala.</p></li>
+      
+<li><p>We offer merit assistance to the students and help
+them in online choose Olling options for various
+admissions</p></li>
+</ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>APPLICATION ASSISTANCE</h2>
+      <li><p>Our admission oVcers assist the candidates on all
+stages of application submission to their preferred
+colleges & courses and for competitive exams</p></li>
+      
+<li><p>Our students will get exclusive technical guidance
+involved in online application procedures in
+various admissions</p></li>
+</ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>DIRECT ADMISSION</h2>
+      <li><p>We are oVcial admission partners for top colleges
+and universities and are authorised to
+conduct direct admissions in these institutions
+under management /NRI quota</p></li>
+      
+<li><p>We provide exclusive information about different
+admissions procedures followed in various
+colleges for direct admissions</p></li>
+</ul>
+    </div>
+     <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>SEAT RESERVATION</h2>
+      <li><p>We guide our students with detailed information
+involved in seat reservations for their chosen
+course and college</p></li>
+      
+<li><p>Our students will get exclusive beneOts of booking
+the seats in advance for high demanded courses
+and colleges. This saves them from losing the
+opportunity</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>COURSE SELECTIONS</h2>
+      <li><p>After successful aptitude testing our students will
+be provided with different course options based on
+the analysis</p></li>
+      
+<li><p>We further help the students with various
+strategies that are essential to choose the course</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>COLLEGES COMPARISONS</h2>
+      <li><p>Our admission oVcers help the students with
+complete and in-depth details about the colleges</p></li>
+      
+<li><p>The students will be exposed to strategic
+comparative information about different colleges
+by the whatisnext team, so that the students
+can make the Onal decision</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>BANK LOAN ASSISTANCE</h2>
+      <li><p>We guide the students regarding the educational
+loans, process and for all documentation required</p></li>
+      
+<li><p>We also assist the students with different modes
+of payments <br>
+Explaining for the criteria for availing education
+loan.</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>INDUSTRY EXPECTATIONS AND TRENDS</h2>
+      <li><p>We guide the students about the industry
+expectations and trends in the job markets</p></li>
+      
+<li><p>We give detailed statistics of upcoming industry
+requirements and help them to adapt to the
+changing industry needs</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>PLACEMENTS</h2>
+      <li><p>We provide exclusive placement assistance for our
+students with all upcoming opportunities</p></li>
+      
+<li><p>Galaxy placement cell the in-house placement
+team helps our students in getting placed in
+different companies based on their interests</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>TRAVEL ASSISTANCE</h2>
+      <li><p>We provide personalised pick up and drop facilities
+for outstation students and parents to colleges</p></li>
+      
+<li><p>Our team will guide the students about different
+parameters like distance of Bangalore from
+different parts of the country, mode of transport to
+reach college campus in Bangalore etc.</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>ACCOMMODATION</h2>
+      <li><p>We provide accommodation assistance for all the
+students and parents seeking admissions in
+different colleges and help them to book the hotel
+rooms for stay according to their budgets</p></li>
+      
+<li><p>We also assist the students in Onding
+accommodations around the colleges after they
+got admissions</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>VISA ASSISTANCE</h2>
+      <li><p>Our dedicated Visa teams guide the students
+about VIsa terms and processes, we also help with
+documents required for Visa processing</p></li>
+      
+<li><p>We offer complete Visa assistance for all the
+students for selected countries</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>FOREIGN EXCHANGE ASSISTANCE</h2>
+      <li><p>Galaxy Education also provides foreign exchange
+assistance for the students interested in studying
+Abroad</p></li>
+      
+<li><p>We have tied up with different Foreign Exchange
+dealers for currency exchange and students can
+choose according to their convenience</p></li>
+</ul>
+    </div>
+        <div class="feature card">
+      <ul>
+      <i class="fas fa-star"></i>
+      <h2>CAMPUS VISITS</h2>
+      <li><p>We are authorised to conduct campus visits for
+different colleges  for our students</p></li>
+      
+<li><p>Our dedicated executives will accompany the
+students to provide guidance about the campus</p></li>
+</ul>
+    </div>
+
+    
+    <div class="feature card" > <ul>
+      <i class="fas fa-users"></i>
+      <h2>APTITUDE TESTING
+</h2>
+      <li><p>We conduct aptitude testing for evaluating the
+interests of the students</p></li>
+<li><p>Our team analyses the capabilities and interests of
+the students and help them to shortlist the right
+courses</p></li></ul>
+    </div>
+    
+  </section>
+  <button id="load-more-btn">Load More</button>
+  <style>
+
+
+header {
+  
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 45px;
+  text-align: center;
+font-weight: 500;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.feature {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #2b3b7b;
+}
+
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #000000;
+}
 
 
 
+@media only screen and (max-width: 768px) {
+  .features {
+    padding: 20px;
+  }
+
+  .feature {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header h1 {
+    font-size: 34px;
+    font-family: 300;
+  }
+
+  .feature {
+    flex-basis: 100%;
+  }
+}
+
+  </style>
+
+<style>
+    .card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(138,134,184,1);
+-moz-box-shadow: 10px 10px 5px 0px rgba(138,134,184,1);
+box-shadow: 10px 10px 5px 0px rgba(138,134,184,1);
+}
+
+#load-more-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+<script>
+    const cards = document.querySelectorAll('.card');
+const loadMoreBtn = document.querySelector('#load-more-btn');
+let visibleCards = 6; // adjust this number as needed
+
+for (let i = visibleCards; i < cards.length; i++) {
+  cards[i].style.display = 'none';
+}
+
+loadMoreBtn.addEventListener('click', function() {
+  for (let i = visibleCards; i < visibleCards + 6 && i < cards.length; i++) {
+    cards[i].style.display = 'block';
+  }
+  visibleCards += 6;
+  if (visibleCards >= cards.length) {
+    loadMoreBtn.style.display = 'none';
+  }
+});
+</script>
 <div id="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -360,121 +936,7 @@ window.onclick = function(event) {
 }
 
 </script>
-<section class="ftco-section ftco-about img">
-  <div class="container">
-  <div class="row d-flex">
-  <div class="col-md-12 about-intro">
-  <div class="row">
-  <div class="col-md-6 d-flex">
-  <div class="d-flex about-wrap">
-  <div class="img d-flex align-items-center justify-content-center"  style="background-image:url(images/image_3.jpg);">
-  </div>
-  <div class="img-2 d-flex align-items-center justify-content-center" style="background-image:url(images/gra.jpg);">
-  </div>
-  </div>
-  </div>
-  <div class="col-md-6 pl-md-5 py-5">
-  <div class="row justify-content-start pb-3">
-  <div class="col-md-12 heading-section ftco-animate" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-  
-  <h2 class="mb-4">Why Choose Us?</h2>
-  <p>Looking to make a big career move? We’re here to help! Our Team #whatisnext comprises experienced professionals dedicated to helping students achieve their academic and career goals by choosing the right Course and Right University/College which personalised to suit you.</p>
 
-<div class="row">
-  <div class="col">
-    <ul class="unordered-list">
-      <li class="icon-list"><img src="images/carrer.png" class="icon-img"/>CAREER COUNSELING</li>
-      <li class="icon-list"><img src="images/location.png" class="icon-img "/>ADMISSION GUIDANCE</li>
-      <li class="icon-list"><img src="images/search.png" class="icon-img "/> APTITUDE TESTING</li>
-      <li class="icon-list"><img src="images/child.png" class="icon-img "/>ADMISSION GUIDANCE</li>
-      <li class="icon-list"><img src="images/promotion.png" class="icon-img "/>PERSONALITY TRAINING</li>
-      <li class="icon-list"><img src="images/award.png" class="icon-img "/>MERIT ASSISTANCE</li>
-      <li class="icon-list"><img src="images/test.png" class="icon-img "/><span>COMPETITIVE EXAM TRAINING</span> </li>
-      <li class="icon-list"><img src="images/resume.png" class="icon-img "/>
-      <span>APPLICATION ASSISTANCE</span> </li>
-    </ul>
-  </div>
-  <div class="col">
-    <ul class="unordered-list">
-    <li class="icon-list"><img src="images/college.png" class="icon-img "/> COLLEGES COMPARISON</li>
-      <li class="icon-list"><img src="images/learning.png" class="icon-img "/> COURSE SELECTION</li>
-      <li class="icon-list"><img src="images/op.png" class="icon-img "/>CAREER OPTIONS</li>
-      <li class="icon-list"><img src="images/online.png" class="icon-img "/>INTERVIEW TRAINING</li>
-      <li class="icon-list"><img src="images/scholarship.png" class="icon-img "/>SCHOLARSHIPS</li>
-      <li class="icon-list"><img src="images/visitor.png" class="icon-img "/>CAMPUS VISITS</li>
-      <li class="icon-list"><img src="images/admission.png" class="icon-img "/> DIRECT ADMISSION</li>
-      <li class="icon-list"><img src="images/placement.png" class="icon-img "/>PLACEMENTS</li>
-      <li class="icon-list"><img src="images/personal.png" class="icon-img "/>BANK LOAN ASSISTANCE</li>
-    </ul>
-  </div>
-</div>
-<style>
-    .row {
-  display: flex;
-  
-  align-items: stretch;
-}
-
-.col {
-  flex: 1;
-  margin: 0 10px;
-}
-
-.unordered-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.unordered-list li {
-  margin-bottom: 5px;
-}
-
-</style>
-
-<style>
-.icon-list {
-  list-style: none;
-  margin-bottom: 10px;
-   font-size:13px;
-   color: #000000;
-   font-weight: bold;
-}
-  @media (max-width: 767.98px) {
-        .icon-list .icon-img {
-            height: 1.188rem;
-     width: 1.188rem;
-      margin-right: 5px;
-          } }
-    @media (max-width: 575.98px) {
-      .icon-list{
-        font-size: 10px;
-         
-      
-        font-weight: normal;
-         } }
-.icon-img{
-    height: 3.188rem;
-     width: 3.188rem;
-     margin-right: 10px;
-}
-
-</style>
-
-
-
-
-
-
-
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
   
 <section class="ftco-section-counter img" style="background-image: url(images/image_6.jpg);">
 <div class="overlay"></div>
@@ -527,129 +989,6 @@ window.onclick = function(event) {
 </div>
 </div>
 </section>
-
-
- 
-<!-- <div class="col-md-12" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-<div class="carousel-courses">
-<div class="item">
-<div class="courses">
-<div class="d-flex">
-<div class="icon"><span class="flaticon-engineer"></span></div>
-<div class="text">
-<h2>Basic Fundamentals for Software Engineering</h2>
-<p class="rate">
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span>(5.0)</span>
-</p>
-<div class="author-wrap d-flex align-items-center">
-<div class="img" style="background-image: url(images/author-1.jpg);"></div>
-<span class="author">by John Smith</span>
-</div>
-<p class="lec"><a href="#">50 lectures (190 hrs)</a></p>
-</div>
-</div>
-<div class="text-center bg-light rounded py-2 my-3">
-<p class="course-price mb-0"><span>$100 All Course</span> / <span>$15 per month</span></p>
-</div>
-<div class="text-center">
-<a href="#" class="btn d-block btn-primary btn-outline-primary py-3">Enroll Now!</a>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="courses">
-<div class="d-flex">
-<div class="icon"><span class="flaticon-design"></span></div>
-<div class="text">
-<h2>Enhancing Adobe Photoshop CC 2020 Skills</h2>
-<p class="rate">
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span>(5.0)</span>
-</p>
-<div class="author-wrap d-flex align-items-center">
-<div class="img" style="background-image: url(images/author-1.jpg);"></div>
-<span class="author">by John Smith</span>
-</div>
-<p class="lec"><a href="#">50 lectures (190 hrs)</a></p>
-</div>
-</div>
-<div class="text-center bg-light rounded py-2 my-3">
-<p class="course-price mb-0"><span>$100 All Course</span> / <span>$15 per month</span></p>
-</div>
-<div class="text-center">
-<a href="#" class="btn d-block btn-primary btn-outline-primary py-3">Enroll Now!</a>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="courses">
-<div class="d-flex">
-<div class="icon"><span class="flaticon-algorithm"></span></div>
-<div class="text">
-<h2>HTML, CSS, and Javascript for Web Developers</h2>
-<p class="rate">
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span>(5.0)</span>
-</p>
-<div class="author-wrap d-flex align-items-center">
-<div class="img" style="background-image: url(images/author-1.jpg);"></div>
-<span class="author">by John Smith</span>
-</div>
-<p class="lec"><a href="#">50 lectures (190 hrs)</a></p>
-</div>
-</div>
-<div class="text-center bg-light rounded py-2 my-3">
-<p class="course-price mb-0"><span>$100 All Course</span> / <span>$15 per month</span></p>
-</div>
-<div class="text-center">
-<a href="#" class="btn d-block btn-primary btn-outline-primary py-3">Enroll Now!</a>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="courses">
-<div class="d-flex">
-<div class="icon"><span class="flaticon-coding"></span></div>
-<div class="text">
-<h2>Introducing to Programming with WordPress </h2>
-<p class="rate">
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span>(5.0)</span>
-</p>
-<div class="author-wrap d-flex align-items-center">
-<div class="img" style="background-image: url(images/author-1.jpg);"></div>
-<span class="author">by John Smith</span>
-</div>
-<p class="lec"><a href="#">50 lectures (190 hrs)</a></p>
-</div>
-</div>
-<div class="text-center bg-light rounded py-2 my-3">
-<p class="course-price mb-0"><span>$100 All Course</span> / <span>$15 per month</span></p>
-</div>
-<div class="text-center">
-<a href="#" class="btn d-block btn-primary btn-outline-primary py-3">Enroll Now!</a>
-</div>
-</div>
-</div>
-</div>
-</div> -->
 
 <section class="ftco-section">
   <div class="container-xl">
@@ -779,102 +1118,7 @@ window.onclick = function(event) {
   
   </section>
   
-<!-- <section class="ftco-section testimony-section bg-light">
-<div class="container-xl">
-<div class="row justify-content-center pb-4">
-<div class="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000">
-<span class="subheading">Testimonial</span>
-<h2 class="mb-5">Our Successful Students</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-<div class="carousel-testimony">
-<div class="item">
-<div class="testimony-wrap">
-<div class="text">
-<div class="d-flex align-items-center mb-4">
-<div class="user-img" style="background-image: url(images/person_1.jpg)">
-<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-</div>
-<div class="ps-3 tx">
-<p class="name">Roger Scott</p>
-<span class="position">Marketing Manager</span>
-</div>
-</div>
-<p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="testimony-wrap">
-<div class="text">
-<div class="d-flex align-items-center mb-4">
-<div class="user-img" style="background-image: url(images/person_2.jpg)">
-<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-</div>
-<div class="ps-3 tx">
-<p class="name">Roger Scott</p>
-<span class="position">Marketing Manager</span>
-</div>
-</div>
-<p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="testimony-wrap">
-<div class="text">
-<div class="d-flex align-items-center mb-4">
-<div class="user-img" style="background-image: url(images/person_3.jpg)">
-<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-</div>
-<div class="ps-3 tx">
-<p class="name">Roger Scott</p>
-<span class="position">Marketing Manager</span>
-</div>
-</div>
-<p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="testimony-wrap">
-<div class="text">
-<div class="d-flex align-items-center mb-4">
-<div class="user-img" style="background-image: url(images/person_1.jpg)">
-<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-</div>
-<div class="ps-3 tx">
-<p class="name">Roger Scott</p>
-<span class="position">Marketing Manager</span>
-</div>
-</div>
-<p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="testimony-wrap">
- <div class="text">
-<div class="d-flex align-items-center mb-4">
-<div class="user-img" style="background-image: url(images/person_2.jpg)">
-<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-</div>
-<div class="ps-3 tx">
-<p class="name">Roger Scott</p>
-<span class="position">Marketing Manager</span>
-</div>
-</div>
-<p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section> -->
+
 <section class="ftco-section testimony-section bg-light">
   <div class="container-xl">
   <div class="row justify-content-center pb-4">
@@ -909,7 +1153,7 @@ window.onclick = function(event) {
   <div class="testimony-wrap">
   <div class="text">
   <div class="d-flex align-items-center mb-4">
-  <div class="user-img" style="background-image: url(images/vanithA.jpeg)">
+  <div class="user-img" style="background-image: url(images/Vanitha.jpeg)">
   <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
   </div>
   <div class="ps-3 tx">
@@ -1002,7 +1246,7 @@ window.onclick = function(event) {
 <section>
 <center>  <h2 class="mb-5" style="font-weight: 430; font-size: 40px;">Top Colleges & Universities</h2></center>
     <div class="container mb-5">
-       <marquee  width="90%" direction="left" height="100px" scrollamount="10"> <div class="row g-5">
+       <marquee  width="95%" direction="left" height="100px" scrollamount="10"> <div class="row g-5">
           <div class="col col-6 col-sm-6 col-md-4 col-xl-4 col-xxl-4 col-lg-4"><div class="card-collage "><center><a href="#gal9"><img src="images/u1.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u2.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u3.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u4.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u5.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u6.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u7.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u8.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u9.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u10.jpg" alt="High Edu" class="collage-img"></a><a href="#gal9"><img src="images/u11.jpg" alt="High Edu" class="collage-img"></a></center></div></div>
  
             
