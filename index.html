@@ -836,7 +836,7 @@ for (let i = visibleCards; i < cards.length; i++) {
 }
 
 loadMoreBtn.addEventListener('click', function() {
-  for (let i = visibleCards; i < visibleCards + 4 && i < cards.length; i++) {
+  for (let i = visibleCards; i < visibleCards + 2 && i < cards.length; i++) {
     cards[i].style.display = 'block';
   }
   visibleCards += 4;
