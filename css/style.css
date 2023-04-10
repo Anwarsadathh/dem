@@ -239,7 +239,16 @@ select {
 [list]::-webkit-calendar-picker-indicator {
   display: none; }
 
-
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+  button:not(:disabled),
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled) {
+    cursor: pointer; }
 
 textarea {
   resize: vertical; }
@@ -536,7 +545,7 @@ progress {
   margin-bottom: 1rem;
   color: #ffffff;
   vertical-align: top;
-  border-color: #dee2e6; }
+  border-color: #ffffff; }
   .table > :not(caption) > * > * {
     padding: 0.5rem 0.5rem;
     background-color: var(--bs-table-bg);
@@ -2006,9 +2015,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
         .hero-wrap .slider-text .breadcrumbs span a {
           color: rgba(255, 255, 255, 0.8); }
           .hero-wrap .slider-text .breadcrumbs span a:hover, .hero-wrap .slider-text .breadcrumbs span a:focus {
-            color: #2b2a2a; }
+            color: #171717; }
             .hero-wrap .slider-text .breadcrumbs span a:hover i, .hero-wrap .slider-text .breadcrumbs span a:focus i {
-              color: #2b2a2a; }
+              color: #111111; }
     .hero-wrap .slider-text .bread {
       font-weight: 400;
       color: #fff;
@@ -3191,6 +3200,7 @@ nav .menu-btn i{
   font-size: 32px;
   cursor: pointer;
   display: none;
+  
 }
 input[type="checkbox"]{
   display: none;
@@ -3244,13 +3254,38 @@ input[type="checkbox"]{
 }
 
 
-
-
-
+.choose-icon{
+  height: 55px; margin-bottom: 5%; margin-top: 2%;
+}
+.msg{
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .msg {
+    font-size: 10px; 
+    font-style: italic;
+  } }
 
    .card-name{
   color: #ffffff;
    }
+.positions{
+  font-size: 15px;
+  margin-top:-10px;
+  font-weight: 500;
 
-
+}
+@media (max-width: 768px) {
+  .positions{
+  font-size: 10px;
+  margin-top:-15px;
+  } }
     
+  .names{
+    font-size: 20px;
+    font-weight: 550;
+    color: #000;
+  }
