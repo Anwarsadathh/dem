@@ -146,9 +146,9 @@
         <i  class="fa fa-bars"></i>
       </label>
       <ul >
-        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-        <li class="nav-item"><a class="nav-link active " href="team.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link  " href="team.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="application-form.html">Register</a></li>
         
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -741,13 +741,14 @@ font-weight: 500;
 }
 
 .feature h2 {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
   margin-bottom: 10px;
   color: #000000;
 }
 
 .feature p {
-  font-size: 16px;
+  font-size: 15px;
   color: #000000;
 }
 
@@ -757,7 +758,11 @@ font-weight: 500;
   .features {
     padding: 20px;
   }
-
+  .feature i {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2b3b7b;
+}
   .feature {
     flex-basis: calc(50% - 20px);
     margin-bottom: 20px;
@@ -766,10 +771,20 @@ font-weight: 500;
 
 @media only screen and (max-width: 480px) {
   header h1 {
-    font-size: 34px;
-    font-family: 300;
+    font-size: 35px;
+    
+    font-weight: 300;
   }
-
+  .feature p {
+  font-size: 10px;
+  color: #000000;
+}
+.feature h2 {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
   .feature {
     flex-basis: 100%;
   }
