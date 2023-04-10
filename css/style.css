@@ -3257,6 +3257,10 @@ input[type="checkbox"]{
 .choose-icon{
   height: 55px; margin-bottom: 5%; margin-top: 2%;
 }
+@media (max-width: 768px) {
+  .choose-icon {
+   height: 25px; margin-bottom: 5%; margin-top: 2%;
+  } }
 .msg{
   font-size: 15px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

@@ -448,6 +448,14 @@ interdisciplinary skills and assist in personality
 enhancement of students</p></li>
 </ul>
     </div>
+    <div class="feature card">
+      <ul>
+        <i class="fa-solid fa-headset"></i>
+      <h2>24*7 Support</h2>
+      <li><p>We help be available from monday to saturday between 9 AM to 6 PM.kKindly contact us if you have any queries,we are there to assist you.</p></li>
+  
+</ul>
+    </div>
      <div class="feature card">
       <ul>
       <i class="fas fa-star"></i>
@@ -821,17 +829,17 @@ box-shadow: 10px 10px 5px 0px rgba(138,134,184,1);
 <script>
     const cards = document.querySelectorAll('.card');
 const loadMoreBtn = document.querySelector('#load-more-btn');
-let visibleCards = 6; // adjust this number as needed
+let visibleCards = 4; // adjust this number as needed
 
 for (let i = visibleCards; i < cards.length; i++) {
   cards[i].style.display = 'none';
 }
 
 loadMoreBtn.addEventListener('click', function() {
-  for (let i = visibleCards; i < visibleCards + 6 && i < cards.length; i++) {
+  for (let i = visibleCards; i < visibleCards + 4 && i < cards.length; i++) {
     cards[i].style.display = 'block';
   }
-  visibleCards += 6;
+  visibleCards += 4;
   if (visibleCards >= cards.length) {
     loadMoreBtn.style.display = 'none';
   }
