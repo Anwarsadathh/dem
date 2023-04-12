@@ -294,17 +294,19 @@ textarea {
   margin-top: -30px;
   margin-left: 76px;
 }
-@media (max-width: 385px) {
+@media (max-width: 767px) {
   .footer-logo{
     height: 200px;
     width: 200px;
-    margin-top: -10px;
-    margin-left: 75px; 
+    margin-top: -55px;
+    margin-left: 85px; 
 }
-    
+    .footer-quote{
+      margin-top: -50px;
+    }
   }
-  
-  @media (max-width: 385px) {
+ 
+  @media (max-width: 767px) {
     .logo-footer{
       width: 300px;
       margin-left: -31px;
@@ -2026,7 +2028,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
   background: #f8f8f8 !important; }
 
 .bg-primary {
-  background: #002776 !important; }
+  background:#4ba5d7 !important; }
 
 .bg-darken {
   background: #111111 !important; }
@@ -2378,7 +2380,8 @@ background: linear-gradient(90deg, rgba(14,36,82,1) 42%, rgba(14,36,82,1) 46%, r
 
 .ftco-footer {
   padding: 5em 0 0 0;
-  background: #000000; }
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  }
   .ftco-footer .logo a {
     position: relative;
     text-decoration: none;
@@ -3251,11 +3254,12 @@ input[type="checkbox"]{
 
 .choose-icon{
   height: 55px; margin-bottom: 5%; margin-top: 2%;
+  filter: brightness(0) invert(1) !important;
 }
 @media (max-width: 768px) {
   .choose-icon {
    height: 45px; margin-bottom: 5%; margin-top: 2%;
-   color: #000000;
+ 
   } }
 .msg{
   font-size: 15px;
