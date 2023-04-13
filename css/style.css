@@ -2028,7 +2028,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
   background: #f8f8f8 !important; }
 
 .bg-primary {
-  background:#2553b5 !important; }
+  background:#2050b8 !important; }
 
 .bg-darken {
   background: #111111 !important; }
@@ -2419,7 +2419,7 @@ background: linear-gradient(90deg, rgba(14,36,82,1) 42%, rgba(14,36,82,1) 46%, r
       .ftco-footer .block-23 ul li, .ftco-footer .block-23 ul li > a {
         display: table;
         line-height: 1.5;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
         font-size: 15px; }
       .ftco-footer .block-23 ul li span {
         color: rgb(255, 255, 255);
