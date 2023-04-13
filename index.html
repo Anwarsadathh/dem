@@ -848,7 +848,7 @@ loadMoreBtn.addEventListener('click', function() {
   for (let i = visibleCards; i < visibleCards + 2 && i < cards.length; i++) {
     cards[i].style.display = 'block';
   }
-  visibleCards += 4;
+  visibleCards += 2;
   if (visibleCards >= cards.length) {
     loadMoreBtn.style.display = 'none';
   }
