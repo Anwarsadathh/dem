@@ -3269,6 +3269,17 @@ input[type="checkbox"]{
    height: 45px; margin-bottom: 5%; margin-top: 2%;
  
   } }
+  .course-icon{
+    width: auto; 
+    height: 75px;
+    margin-bottom: 2%; margin-top: 2%;
+    filter: brightness(0) invert(1) !important;
+  }
+  @media (max-width: 768px) {
+    .course-icon {
+     height: 65px; margin-bottom: 5%; margin-top: 2%;
+   
+    } }
 .msg{
   font-size: 15px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
