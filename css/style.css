@@ -34,9 +34,14 @@
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth; } }
-
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 body {
   margin: 0;
+
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
@@ -256,6 +261,9 @@ textarea {
   direction: ltr;
 }
 */
+.footer-quote{
+  margin-top: 50px;
+}
 .nextt{
   width: 250px;
   height: 250px;
@@ -2391,7 +2399,7 @@ background: linear-gradient(90deg, rgba(14,36,82,1) 42%, rgba(14,36,82,1) 46%, r
       color: #d4d4d4; }
   .ftco-footer .ftco-footer-widget h2, .ftco-footer .ftco-footer-widget .h2 {
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 18px;
     font-weight: 500;
     font-family: "Roboto", Arial, sans-serif; }
@@ -2419,7 +2427,7 @@ background: linear-gradient(90deg, rgba(14,36,82,1) 42%, rgba(14,36,82,1) 46%, r
       .ftco-footer .block-23 ul li, .ftco-footer .block-23 ul li > a {
         display: table;
         line-height: 1.5;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
         font-size: 15px; }
       .ftco-footer .block-23 ul li span {
         color: rgb(255, 255, 255);
@@ -3286,10 +3294,26 @@ input[type="checkbox"]{
   .positions{
   font-size: 10px;
   margin-top:-15px;
-  } }
+  }
+
+}
     
   .names{
     font-size: 20px;
     font-weight: 550;
     color: #000;
+  }
+
+  #copy-right{
+    font-size: 14px; 
+    color: #d7d7d7;
+    margin-top: 0px;
+  }
+  @media (max-width: 768px) {
+    #copy-right{
+      font-size: 10px; 
+      color: #d7d7d7;
+      margin-top: 0px;
+    }
+  
   }
