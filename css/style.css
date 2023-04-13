@@ -2391,7 +2391,7 @@ background: linear-gradient(90deg, rgba(14,36,82,1) 42%, rgba(14,36,82,1) 46%, r
       color: #d4d4d4; }
   .ftco-footer .ftco-footer-widget h2, .ftco-footer .ftco-footer-widget .h2 {
     color: #ffffff;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     font-size: 18px;
     font-weight: 500;
     font-family: "Roboto", Arial, sans-serif; }
