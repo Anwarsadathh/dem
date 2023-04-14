@@ -985,9 +985,11 @@
                                     <option value="Uttar Pradesh">Uttar Pradesh</option>
                                     <option value="Uttarakhand">Uttarakhand</option>
                                     <option value="West Bengal">West Bengal</option>
+                                    <option value="West Bengal">Other</option>
                                     </select>
                               </div>
                           </div>
+                          
                           <div class="col">
                             <div class="form-group">
                                 <label class="label" for="name">City</label>
@@ -1082,16 +1084,48 @@
                             </div>
                           </div>
                       </div>
-
-                     
                       <div class="form-row  m-b-55">
-                        <div class="name">Prefferes contact</div>
+                        <div class="name"> 10th</div>
                         <div class="value">
                             <div class="input-group">
-                                <input class="input--style-5" type="number" name="Prefferes contact">
+                                <input class="input--style-5" type="text" name="10th" placeholder="Institution name">
                             </div>
                         </div>
                     </div>
+                    
+                    <input type="checkbox" id="myCheckbox">
+<label for="myCheckbox" class="custom-checkbox"></label>
+
+<style>
+ .custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  background-color: #FFF;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-checkbox::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin: 4px 0 0 6px;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+
+
+</style>                    
+                     
+                      
                     <h3 class="name text-center mb-5" style="color: #4538d5; font-weight: bold">Name of Institution  last Attended </h3>
                     <div class="form-row  m-b-55">
                         <div class="name"> 10th</div>
