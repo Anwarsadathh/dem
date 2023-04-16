@@ -268,6 +268,8 @@
    ========================================================================== */
   .page-wrapper {
   min-height: 85vh;
+margin-left: 5%;
+margin-right: 5%;
   }
   
 
@@ -680,8 +682,8 @@
   }
   @media (max-width: 767px) {
   .label{
-    font-size: 13px;
-  font-weight: 700;
+    font-size: 10px;
+  font-weight: 550;
     display: block;
   }}
   .label--block {
@@ -802,7 +804,15 @@
   text-align: center;
   color: #fff;
   }
-  
+  @media (max-width: 767px) {
+    .title {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  }
+  }
   /* ==========================================================================
    #CARD
    ========================================================================== */
@@ -825,7 +835,7 @@
   
   .card-5 .card-heading {
   padding: 20px 0;
-  background: #100252;
+  background: #142474;
   -webkit-border-top-left-radius: 10px;
   -moz-border-radius-topleft: 10px;
   border-top-left-radius: 10px;
@@ -833,9 +843,12 @@
   -moz-border-radius-topright: 10px;
   border-top-right-radius: 10px;
   }
-  
+  .card-body{
+    
+  }
   .card-5 .card-body {
   padding: 52px 85px;
+
   padding-bottom: 73px;
   }
   
@@ -866,10 +879,61 @@
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <style>
+      .container-book{
+        margin-top: 100px;
+      }
+      .card-book {
+        font-family: inherit;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 40px;
+          background-color: #142474;
+          border-radius: 5px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          text-align: center;
+      }
 
+      .card-book h1 {
+          font-size: 24px;
+          color: white;
+          margin-bottom: 10px;
+          font-family: inherit;
+          font-weight: 500;
+      }
+
+      .card-book p {
+          font-size: 16px;
+          margin-bottom: 20px;
+      }
+
+      .card-book button {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          background-color: #e4ff31;
+          color: #000000;
+          font-size: 18px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      /* Media queries for responsiveness */
+      @media (max-width: 768px) {
+          .card-book {
+              max-width: 90%;
+          }
+      }
+  </style>
+  <div class="container-book">
+ <div class="card-book">
+  <h1>Talk with a Mentor</h1>
+  <a href="contact.html"><button>Book video Session</button></a>
+</div></div>
 <script src="js/script.js"></script>
-
-<div class="page-wrapper bg-gra-03 mt-5 p-t-45 p-b-50">
+<p style="font-size: 25px; text-align: center; justify-content: center;" class="mt-4 ">OR</p>
+<div class="page-wrapper bg-gra-03  p-b-50">
     <div class="wrapper wrapper--w790">
         <div class="card card-5">
             <div class="card-heading">
