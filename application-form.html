@@ -268,8 +268,7 @@
    ========================================================================== */
   .page-wrapper {
   min-height: 85vh;
-margin-left: 5%;
-margin-right: 5%;
+
   }
   
 
@@ -390,7 +389,11 @@ margin-right: 5%;
   .wrapper--w790 {
   max-width: 790px;
   }
-  
+  @media (max-width: 767px) {
+    .wrapper--w790 {
+  max-width: 350px;
+  }
+  }
   .wrapper--w780 {
   max-width: 780px;
   }
@@ -843,9 +846,7 @@ margin-right: 5%;
   -moz-border-radius-topright: 10px;
   border-top-right-radius: 10px;
   }
-  .card-body{
-    
-  }
+ 
   .card-5 .card-body {
   padding: 52px 85px;
 
@@ -885,7 +886,7 @@ margin-right: 5%;
       }
       .card-book {
         font-family: inherit;
-          max-width: 800px;
+          width: 790px;
           margin: 0 auto;
           padding: 40px;
           background-color: #142474;
@@ -911,7 +912,7 @@ margin-right: 5%;
           display: block;
           width: 100%;
           padding: 10px;
-          background-color: #e4ff31;
+          background-color: #fffc31;
           color: #000000;
           font-size: 18px;
           border: none;
@@ -1049,7 +1050,7 @@ margin-right: 5%;
                                     <option value="Uttar Pradesh">Uttar Pradesh</option>
                                     <option value="Uttarakhand">Uttarakhand</option>
                                     <option value="West Bengal">West Bengal</option>
-                                    <option value="West Bengal">Other</option>
+                                    <option value="Other">Other</option>
                                     </select>
                               </div>
                           </div>
@@ -1108,7 +1109,7 @@ margin-right: 5%;
                         <div class="col">
                             <div class="form-group">
                                 <label class="label" for="name">Father name</label>
-                              <input  class="input--style-5 " type="text" class="form-control" name="Father name"  placeholder="father name">
+                              <input  class="input--style-5 " type="text" class="form-control" name="Father-name"  placeholder="father name">
                             </div>
                           </div>
                           <div class="col">
@@ -1149,46 +1150,102 @@ margin-right: 5%;
                           </div>
                       </div>
                       <div class="form-row  m-b-55">
-                        <div class="name"> 10th</div>
-                        <div class="value">
-                            <div class="input-group">
-                                <input class="input--style-5" type="text" name="10th" placeholder="Institution name">
+                        <div class="label"  for="name">Preffered Contact</div>
+                        
+                          <div class="custom-checkbox-group">
+                            <div class="custom-checkbox">
+                              <div class="labels">Father</div>
+                              <input type="checkbox" id="checkbox1" name="Preffered Contact" value="Father">
+                              <label for="checkbox1"></label>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <input type="checkbox" id="myCheckbox">
-<label for="myCheckbox" class="custom-checkbox"></label>
+                            <div class="custom-checkbox">
+                              <div class="labels">Mother</div>
+                              <input type="checkbox" id="checkbox2" name="Preffered Contact" value="Mother">
+                              <label for="checkbox2"></label>
+                            </div>
+                            <div class="custom-checkbox">
+                              <div class="labels">Gardian</div>
+                              <input type="checkbox" id="checkbox3"  name="Preffered Contact" value="Gardian">
+                              <label for="checkbox3"></label>
+                            </div>
+                          </div>
+                          
+                        
+                   
+                  </div>
+               
 
 <style>
- .custom-checkbox {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #000;
-  background-color: #FFF;
-  display: inline-block;
+ .custom-checkbox-group {
+  display: flex;
+  margin-left: 20px;
+}
+.labels{
+  margin-left: 1px;
+  color: #323232;
+}
+@media (max-width: 767px) {
+  .labels{
+  color: #323232;
+  font-size: 10px;
+}
+  }
+.custom-checkbox {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 25px; /* Space for the custom checkbox */
+  cursor: pointer;
+  margin-right: 10px; /* Spacing between checkboxes */
+}
+
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
   cursor: pointer;
 }
 
-.custom-checkbox::after {
+.custom-checkbox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px; /* Size of the custom checkbox */
+  height: 20px; /* Size of the custom checkbox */
+  background-color: #eee; /* Background color of the custom checkbox */
+  border-radius: 3px; /* Rounded corners */
+}
+
+.custom-checkbox label:after {
   content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked + label:after {
   display: block;
-  width: 10px;
-  height: 5px;
-  border: solid #000;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  margin: 4px 0 0 6px;
-  opacity: 0;
 }
 
-input[type="checkbox"]:checked + .custom-checkbox::after {
-  opacity: 1;
+.custom-checkbox label:after {
+  left: 6px; /* Position of the checkmark */
+  top: 2px; /* Position of the checkmark */
+  width: 8px; /* Size of the checkmark */
+  height: 14px; /* Size of the checkmark */
+  border: solid #000; /* Color of the checkmark */
+  border-width: 0 2px 2px 0; /* Shape of the checkmark */
+  transform: rotate(45deg); /* Orientation of the checkmark */
 }
-
 
 </style>                    
-                     
+          <script>
+            document.getElementById('myCheckbox').addEventListener('change', function() {
+  // Custom behavior when the checkbox is changed
+  if (this.checked) {
+    // Do something when the checkbox is checked
+  } else {
+    // Do something when the checkbox is unchecked
+  }
+});
+
+          </script>           
                       
                     <h3 class="name text-center mb-5" style="color: #4538d5; font-weight: bold">Name of Institution  last Attended </h3>
                     <div class="form-row  m-b-55">
@@ -1219,7 +1276,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
                         <div class="col">
                             <div class="form-group">
                               <label class="label" for="name">Percentage of Mark</label>
-                              <input  class="input--style-5 " type="text" class="form-control" name="Percentage "  placeholder="Percentage ">
+                              <input  class="input--style-5 " type="text" class="form-control" name="Percentage"  placeholder="Percentage ">
                             </div>
                           </div>
                           <div class="col">
