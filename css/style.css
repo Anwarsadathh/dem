@@ -2167,7 +2167,7 @@ textarea.form-control {
       font-weight: 500;
       margin-bottom: 15px; }
   .services:hover, .services.active {
-    background: #4ba5d7;
+    background: linear-gradient(to bottom, rgba(38, 98, 142, 0.52), rgba(27, 43, 123, 0.73));
     -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18);
     box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.18); }
