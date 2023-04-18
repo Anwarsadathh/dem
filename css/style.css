@@ -1730,7 +1730,7 @@ body {
   font-weight: 400;
   color: #605757; }
 
-a, button {
+/* a, button {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
@@ -1741,7 +1741,7 @@ a, button {
     color: #000000;
     outline: none !important;
     -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    box-shadow: none !important; } */
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
 .h1, .h2, .h3, .h4, .h5 {
