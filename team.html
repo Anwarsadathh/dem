@@ -192,7 +192,7 @@
 
   <div class="container mt-5">
   <div class="row mb-5">
-    <div class="col-md-6">
+    <div id="ceo-image" class="col-md-6">
       <img src="images/website ceo-1 (1).jpg" alt="team member image" class="img-fluid">
     </div>
     <div id="teams-para" class="col-md-6" style="text-align: justify;  padding-left: 5%; padding-right: 5%; ">
@@ -226,7 +226,7 @@
 </div>
     </div>
     
-    <div class="col-md-6 order-md-1">
+    <div id="ceo-image" class="col-md-6 order-md-1">
       <img src="images/sejja.jpg" alt="team member image" class="img-fluid">
     </div>
     
@@ -249,7 +249,7 @@ box-shadow: 10px 10px 11px 1px rgba(0,0,0,1);
   margin-top: 50px;
 }
 @media (max-width: 767.98px) {
-  .col-md-6 {
+  #ceo-image {
     margin-bottom: 20px;
   text-align: justify;
 
@@ -266,7 +266,7 @@ box-shadow: 10px 10px 11px 1px rgba(0,0,0,1);
     order: 1;
   }
   
-  .col-md-6 img {
+  #ceo-image img {
     display: block;
     margin: 0 auto;
     max-width: 70%;
@@ -658,7 +658,7 @@ his passion for marketing.
         </div>
       </div>
     </section>
-  <style>
+  <!-- <style>
 .my-button {
   background-color: rgb(255, 0, 0);
   color: white;
@@ -673,177 +673,16 @@ his passion for marketing.
 }
 
 
-  </style>
+  </style> -->
     <section class="ftco-intro py-5 bg-primary">
       <div class="container">
       <div class="row d-flex justify-content-center">
       <div class="col-lg-10">
       <div class="row ">
       <div class="col-md-12 text-lg-right">
-        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-        <div class="context">
-         
-      </div>
-      
-      
-
-      <div class="area" >
-              <ul class="circles">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-              </ul>
-      </div >
-      <style>
-        @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-      
-      
-      .context {
-          width: 100%;
-          position: absolute;
-          top:10vh;
-          
-      }
-      
-      .context h1{
-          text-align: center;
-          color: #fff;
-          font-size: 50px;
-      }
-      
-      
-      .area{
-         
-          background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-          width: 0%;
-          height:0vh;
-          
-         
-      }
-      
-      .circles{
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-      }
-      
-      .circles li{
-          position: absolute;
-          display: block;
-          list-style: none;
-          width: 20px;
-          height: 20px;
-          background: rgba(255, 255, 255, 0.2);
-          animation: animate 25s linear infinite;
-          bottom: -150px;
-          
-      }
-      
-      .circles li:nth-child(1){
-          left: 25%;
-          width: 80px;
-          height: 80px;
-          animation-delay: 0s;
-      }
-      
-      
-      .circles li:nth-child(2){
-          left: 10%;
-          width: 20px;
-          height: 20px;
-          animation-delay: 2s;
-          animation-duration: 12s;
-      }
-      
-      .circles li:nth-child(3){
-          left: 70%;
-          width: 20px;
-          height: 20px;
-          animation-delay: 4s;
-      }
-      
-      .circles li:nth-child(4){
-          left: 40%;
-          width: 60px;
-          height: 60px;
-          animation-delay: 0s;
-          animation-duration: 18s;
-      }
-      
-      .circles li:nth-child(5){
-          left: 65%;
-          width: 20px;
-          height: 20px;
-          animation-delay: 0s;
-      }
-      
-      .circles li:nth-child(6){
-          left: 75%;
-          width: 110px;
-          height: 110px;
-          animation-delay: 3s;
-      }
-      
-      .circles li:nth-child(7){
-          left: 35%;
-          width: 150px;
-          height: 150px;
-          animation-delay: 7s;
-      }
-      
-      .circles li:nth-child(8){
-          left: 50%;
-          width: 25px;
-          height: 25px;
-          animation-delay: 15s;
-          animation-duration: 45s;
-      }
-      
-      .circles li:nth-child(9){
-          left: 20%;
-          width: 15px;
-          height: 15px;
-          animation-delay: 2s;
-          animation-duration: 35s;
-      }
-      
-      .circles li:nth-child(10){
-          left: 85%;
-          width: 150px;
-          height: 150px;
-          animation-delay: 0s;
-          animation-duration: 11s;
-      }
-      
-      
-      
-      @keyframes animate {
-      
-          0%{
-              transform: translateY(0) rotate(0deg);
-              opacity: 1;
-              border-radius: 0;
-          }
-      
-          100%{
-              transform: translateY(-1000px) rotate(720deg);
-              opacity: 0;
-              border-radius: 50%;
-          }
-      
-      }
-      </style>
-        <center><h2 >Join us on this journey and find what's next for you! <a href="contact.html"></a><i class="fa fa-arrow-up-right-from-square"></i></h2></a> </center>
+        
+     <a href="contact.html"  class="text-center"><h2 >Join us on this journey and find what's next for you! <i class="fa-solid fa-arrow-up-right-from-square"></i></h2> </a>
+       
       </div>
       <div class="col-md-5 border-left d-flex align-items-center">
        
@@ -853,10 +692,10 @@ his passion for marketing.
       </div>
       </div>
       </section>
-      <section>
+  
         <footer class="ftco-footer">
           <div class="container-xl">
-          <div class="row mb-5 justify-content-between">
+          <div class="row  justify-content-between">
           <div class="col-md-6 col-lg">
           <div class="ftco-footer-widget mb-4">
           <h2 class="ftco-heading-2 logo d-flex">
@@ -867,7 +706,7 @@ his passion for marketing.
           </a>
           </h2>
           
-          <p class="footer-quote" style="color: #d5d5d5;">Whatisnext.in mentors have shaped the future of 3000+ students and working professionals based on their skill, background and dream.</p>
+          <p class="footer-quote" style="color: #d5d5d5; font-size: 13px;">Whatisnext.in mentors have shaped the future of 3000+ students and working professionals based on their skill, background and dream.</p>
           <ul class="ftco-footer-social list-unstyled mt-2">
           <li><a href="https://www.linkedin.com/company/whatisnext-in/"><span class="fa fa-linkedin"></span></a></li>
           <li><a href="https://www.facebook.com/profile.php?id=100066432039919&mibextid=LQQJ4d"><span class="fa fa-facebook"></span></a></li>
@@ -905,11 +744,11 @@ his passion for marketing.
               
           </style>
           <div class="col-md-6 col-lg">
-          <div class="ftco-footer-widget mb-4">
+          <div class="ftco-footer-widget mb-">
           <h2 class="ftco-heading-2">Reach Us</h2>
-          <div class="block-23 mb-3">
+          <div class="block-23 mb-">
           <ul>
-          <li><a href="https://g.co/kgs/kQBsSD"><span class="icon fa fa-map marker"></span><span class="text">Whatisnext. in Edu Website ( Office ) 2nd floor, 706, 2nd Cross Rd, HRBR Layout 1st Block, Subbaiahnapalya, Banaswadi, Bengaluru, Karnataka 560043</span></a></li>
+          <li><a href="https://maps.app.goo.gl/HByHCua1haoRW2dXA?g_st=iwb"><span class="icon fa fa-map marker"></span><span class="text">Whatisnext. in Edu Website ( Office ) 2nd floor, 706, 2nd Cross Rd, HRBR Layout 1st Block, Subbaiahnapalya, Banaswadi, Bengaluru, Karnataka 560043</span></a></li>
           <li><a href="tel:+91 90194 17635"><span class="icon fa fa-phone"></span>Head office : <span class="text">&nbsp; +91 90194 17635 </a> </li>
           <li><a href="tel:+91 93533 12839"><span class="icon fa fa-mobile"></span><span class="text">+91 93533 12839
              </span></a><a href="tel:+91 9061296874">&emsp;&emsp;&ensp;&nbsp;<span class="text">+91 9061296874
@@ -919,24 +758,26 @@ his passion for marketing.
           </div>
           </div>
           </div>
-          <hr>
-          <div class="col-md-12 text-center">
-            <div class="mb-3"> 
+          
+          
+          </div>
+          </div>
+          
+          
+          
+          
+          
+          
+          </div>
+          <div class="col-md-12 text-center" style="background-color: #000000;
+          background-image: linear-gradient(315deg, #000000 0%, #494635 74%);">
+            <div class="mb-3"> <hr>
               <a href="contact.html"><span id="copy-right">About Us &emsp;&emsp;</span></a><a href="courses.html"><span id="copy-right">&emsp;Courses&emsp;&emsp;</span></a><a href="application-form.html"><span id="copy-right">&emsp;&emsp;Register&emsp;&emsp;</span></a><a href="contact.html"><span id="copy-right">&emsp;Contact</span></a>
           </div>
             <p class="mb-0 mt-0" id="copy-right" >Copyright © 2023 All rights reserved | <b>Powered by WIN  Digital</b> </p>
             </div>
-          </div>
-          </div>
-          
-          
-          
-          
-          
-          
-          </div>
           </footer>
-    </section>
+  
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/glightbox.min.js"></script>
