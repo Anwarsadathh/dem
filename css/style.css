@@ -2404,7 +2404,7 @@ background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
 
 .ftco-footer {
   padding: 5em 0 0 0;
-  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(0, 0, 0) 78.9%);
   }
   .ftco-footer .logo a {
     position: relative;
@@ -2506,6 +2506,29 @@ background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
     .ftco-footer-social li a:hover {
       color: #000000 !important; }
 
+      .ftco-top-social li {
+        list-style: none;
+        margin: 0 5px 0 0;
+        display: inline-block; }
+        .ftco-top-social li a {
+          height: 35px;
+          width: 35px;
+          display: block;
+          color: #ffffff;
+          border-radius: 50%;
+          position: relative;
+          background: #000000; }
+          .ftco-top-social li a span {
+            position: absolute;
+            font-size: 14px;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            color: #ffffff !important; }
+          .ftco-top-social li a:hover {
+            color: #ffffff !important; }
 #map {
   background: url(../images/bg_3.jpg) no-repeat center;
     background-size: cover;
@@ -2594,7 +2617,7 @@ background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
     background: #000000;
    }
   .testimony-section .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimony-wrap, .courses-section .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimony-wrap {
-    background: #7CB9E8;
+    background: linear-gradient(to bottom, rgba(38, 98, 142, 0.52), rgba(27, 43, 123, 0.73));
     color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2); }
     .testimony-section .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimony-wrap .icon, .courses-section .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimony-wrap .icon {
